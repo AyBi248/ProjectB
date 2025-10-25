@@ -29,6 +29,8 @@
       text-decoration: none;
       font-weight: bold;
       transition: 0.3s;
+      z-index: 1000;      /* 🟢 Giúp link nằm trên mọi phần tử khác */
+      cursor: pointer;    /* 🟢 Cho thấy con trỏ tay khi di chuột */
     }
     header a:hover {
       background-color: #0099cc;
@@ -261,6 +263,13 @@
   <footer>
     &copy; 2025 Website booking room - Nhóm 2 CNTT
   </footer>
+  <script>
+  document.querySelector('header a').addEventListener('click', function() {
+    window.location.href = "https://aybi248.github.io/portfolio-DoKimDai/";
+  });
+</script>
+
 </body>
 </html>
+
 
